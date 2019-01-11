@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-class code
+class matrixmul
 {
 
     public static int[][] transpose(int[][] m, int x, int y)
