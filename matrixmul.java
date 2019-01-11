@@ -35,7 +35,18 @@ class matrixmul
     {
         int i,j,k;
         int[][] result = new int[m][p];
-        for(i=0;i<)
+        for(i=0;i<m;i++)
+        {
+            for(j=0;j<p;j++)
+            {
+                result[i][j] = 0;
+                for(k=0;k<n;k++)
+                {
+                    result[i][j]+=a[i][k]*b[k][j];
+
+                }
+            }
+        }
 
 
          return result;
@@ -45,8 +56,14 @@ class matrixmul
 
     public static void test()
     {
-
-        int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
+        
+        int[][] matrix = {{1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15}};
+        int[][] matrix2 = {{65,64,63},{62,61,60},{59,58,57},{56,55,54},{53,52,51}};
+        disp(matrix,3,5);
+        sop("\n");
+        disp(matrix2,5,3);
+        sop("\n");
+        disp(matmul(matrix,matrix2,3,5,3),3,3);
         //disp(matrix,3,3);                             //testing display function
         //disp(transpose(matrix,3,3),3,3);              //testing transpose function
 
