@@ -33,11 +33,12 @@ class matrixmul
 
     public static int[][] matmul(int[][] a,int b[][], int m, int n, int p)
     {
-         int[][] result = new int[1][1];
+        int i,j,k;
+        int[][] result = new int[m][p];
+        for(i=0;i<)
+
 
          return result;
-
-
 
     }
 
@@ -46,7 +47,8 @@ class matrixmul
     {
 
         int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
-        disp(transpose(matrix,3,3),3,3);
+        //disp(matrix,3,3);                             //testing display function
+        //disp(transpose(matrix,3,3),3,3);              //testing transpose function
 
 
     }
