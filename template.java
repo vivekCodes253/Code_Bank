@@ -16,8 +16,24 @@ class
     Return          :     */
     public static void test(){}
 
+
+    /*Function Name : menu
+    Purpose         : Display menu, get user choice and perform operation
+    Input           : 
+    Return          : True if menu needs to be displayed again, false if exit condition    */
+    public static boolean menu()
+    {
+        int choice;
+        Scanner sc = new Scanner(System.in);
+        choice = sc.nextInt();
+        if(choice==4)
+            return false;
+        return true;
+    }
+
     public static void main(String[] args)
     {
         test();
+        
     }
 }
